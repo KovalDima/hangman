@@ -1,0 +1,108 @@
+.board {
+  position: relative;
+  margin-left: -6rem;
+}
+
+.line {
+  background: #222;
+}
+
+.traverse {
+  height: 0.4rem;
+  width: 13rem;
+  position: absolute;
+  left: 0;
+}
+
+.noose {
+  width: 0.4rem;
+  height: 2.5rem;
+  position: absolute;
+  right: -4rem;
+}
+
+.trunk {
+  height: 18rem;
+  width: 0.4rem;
+  margin: 0 auto;
+}
+
+.basement {
+  width: 7rem;
+  height: 0.4rem;
+}
+
+.hangman {
+  position: absolute;
+  top: 2.45rem;
+  right: -5.25rem;
+  text-align: center;
+}
+
+.head {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.35rem solid #222;
+}
+
+.eye {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
+  top: 1rem;
+}
+
+.eyeLeft {
+  left: 28%;
+}
+
+.eyeRight {
+  right: 26%;
+}
+
+.mouth {
+  width: 0.8rem;
+  height: 0.7rem;
+  border: 0.2rem solid #222;
+  border-radius: 48%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.6rem;
+}
+
+.body {
+  height: 5rem;
+  width: 0.4rem;
+  display: inline-block;
+}
+
+.hand,
+.leg {
+  height: 0.4rem;
+  width: 4rem;
+  position: absolute;
+}
+
+.hand {
+  top: 65%;
+}
+
+.leg {
+  bottom: -15%;
+}
+
+.handLeft,
+.legLeft {
+  transform: rotate(-45deg);
+  left: -1.9rem;
+}
+
+.handRight,
+.legRight {
+  transform: rotate(45deg);
+  right: -1.9rem;
+}

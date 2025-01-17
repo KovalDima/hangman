@@ -1,0 +1,40 @@
+.word {
+  font-size: 50px;
+  font-weight: 600;
+  height: 1.2em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+
+  &.winner {
+    color: darkgreen;
+  }
+}
+
+.word__letter {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: 1em;
+  &.wrong {
+    color: rgb(158, 0, 0);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 88%;
+    height: 4px;
+    background: #222;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .word {
+    font-size: 40px;
+  }
+}

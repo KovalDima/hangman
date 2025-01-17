@@ -1,0 +1,11 @@
+.result {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .result {
+    font-size: 15px;
+  }
+}
